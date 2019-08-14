@@ -23,7 +23,7 @@
     <modules>
         <Round3media_Postmark>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Round3media_Postmark>
     </modules>
 </config>
