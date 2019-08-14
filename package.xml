@@ -1,56 +1,24 @@
 <?xml version="1.0"?>
 <package>
     <name>Round3media_Postmark</name>
-    <version>1.1</version>
+    <version>2.0.0</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Postmark Integration</summary>
-    <description>You can now send emails from Magento through Postmark, which "helps deliver and track transactional emails for web applications".
-
-For more info on Postmark, visit &lt;a href="http://postmarkapp.com"&gt;postmarkapp.com&lt;/a&gt;
-
-Postmark is currently in beta.
-
-The Postmark logo and name are trademarks of &lt;a href="http://wildbit.com"&gt;Wildbit, LLC.&lt;/a&gt;
-
-You can now send emails from Magento through Postmark, which "helps deliver and track transactional emails for web applications".
-
-For more info on Postmark, visit &lt;a href="http://postmarkapp.com"&gt;postmarkapp.com&lt;/a&gt;
-
-Postmark is currently in beta.
-
-The Postmark logo and name are trademarks of &lt;a href="http://wildbit.com"&gt;Wildbit, LLC.&lt;/a&gt;
-
-&lt;b&gt;Note:&lt;/b&gt;
-1. If you receive an Access Denied error, go to Admin &gt; System &gt; Permissions &gt; Roles, Click Administrators, then click save.
-
-2. Bcc is not supported by Postmark, you must set all occurrences of 'Send Order Email Copy Method' to Seperate Email</description>
-    <notes>You can now send emails from Magento through Postmark, which "helps deliver and track transactional emails for web applications".
-
-For more info on Postmark, visit &lt;a href="http://postmarkapp.com"&gt;postmarkapp.com&lt;/a&gt;
-
-Postmark is currently in beta.
-
-The Postmark logo and name are trademarks of &lt;a href="http://wildbit.com"&gt;Wildbit, LLC.&lt;/a&gt;
-
-You can now send emails from Magento through Postmark, which "helps deliver and track transactional emails for web applications".
-
-For more info on Postmark, visit &lt;a href="http://postmarkapp.com"&gt;postmarkapp.com&lt;/a&gt;
-
-Postmark is currently in beta.
-
-The Postmark logo and name are trademarks of &lt;a href="http://wildbit.com"&gt;Wildbit, LLC.&lt;/a&gt;
-
-&lt;b&gt;Note:&lt;/b&gt;
-1. If you receive an Access Denied error, go to Admin &gt; System &gt; Permissions &gt; Roles, Click Administrators, then click save.
-
-2. Bcc is not supported by Postmark, you must set all occurrences of 'Send Order Email Copy Method' to Seperate Email</notes>
-    <authors><author><name>Bob Brodie</name><user>auto-converted</user><email>robert@round3media.com</email></author></authors>
-    <date>2010-04-07</date>
-    <time>16:54:25</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Round3media_Postmark.xml" hash="a872442abc8f8121b3a8ccb67c2a4fc3"/></dir></target><target name="magecommunity"><dir name="Round3media"><dir name="Postmark"><dir name="etc"><file name="config.xml" hash="80d53a2fa98e73c521f6ae13ebd8391f"/><file name="system.xml" hash="b2e098a97cb3a0e96e76e0b5777a15da"/></dir><dir name="Helper"><file name="Data.php" hash="8d4f9863d80e5ad6cca29330106e14c0"/></dir><dir name="Model"><dir name="Email"><file name="Template.php" hash="9ab0f26bc9d34d6d3676e8a86067d383"/></dir><file name="Email.php" hash="99c89c22bdaf0c4dc87c37f28e0fd9b5"/></dir></dir></dir></target></contents>
+    <summary>Send emails through Postmark (http://postmarkapp.com)</summary>
+    <description>&lt;h2&gt;Postmark Integration&lt;/h2&gt;&#xD;
+&lt;p&gt;You can now send emails from Magento through Postmark, which "helps deliver and track transactional emails for web applications". For more info on Postmark, visit &lt;a href="http://postmarkapp.com"&gt;postmarkapp.com&lt;/a&gt; The Postmark logo and name are trademarks of &lt;a href="http://wildbit.com"&gt;Wildbit, LLC.&lt;/a&gt;&lt;/p&gt;</description>
+    <notes>&lt;ol&gt;&#xD;
+&lt;li&gt;One of our owners was a partner in Round3Media, this is an update released by SUMO Heavy Industries&lt;/li&gt;&#xD;
+&lt;li&gt;Now supports Bcc&lt;/li&gt;&#xD;
+&lt;li&gt;Refactored code, better documentation&lt;/li&gt;&#xD;
+&lt;li&gt;Moved the main Postmark class to /lib (ZF)&lt;/li&gt;&#xD;
+&lt;/ol&gt;</notes>
+    <authors><author><name>Robert Brodie</name><user>bobbrodie</user><email>robert@sumoheavy.com</email></author></authors>
+    <date>2012-07-23</date>
+    <time>22:51:57</time>
+    <contents><target name="magecommunity"><dir name="SUMOHeavy"><dir name="Postmark"><dir><dir name="Helper"><file name="Data.php" hash="dde66f70d6a0a39b73b40dda01fc7b0a"/></dir><dir name="Model"><dir name="Core"><dir name="Email"><file name="Template.php" hash="77e982707d651f978ef760b3956154c6"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="2102bf2217b526dbfbc10c7988f2646d"/><file name="system.xml" hash="dc19d9c7acdbb69021060e6f8be93aff"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SUMOHeavy_Postmark.xml" hash="3cbd55fce1c474f2ccff0ca0845bef21"/></dir></target><target name="magelib"><dir name="SUMOHeavy"><dir name="Mail"><dir name="Transport"><file name="Postmark.php" hash="076b7c86e688402adcdfefcc7622ead5"/></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

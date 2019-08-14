@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /**
- * round3media
+ * Postmark integration
  * 
  * NOTICE OF LICENSE
  * 
@@ -11,33 +11,27 @@
  * http://opensource.org/licenses/osl-3.0.php
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
- * to info@round3media.com so we can send you a copy immediately.
+ * to info@sumoheavy.com so we can send you a copy immediately.
  * 
- * @category	Round3media
- * @package		Round3media_Postmark
- * @copyright	Copyright (c) 2009 round3media, LLC
- * @notice		The Postmark logo and name are trademarks of Wildbit, LLC
- * @license		http://www.opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @category    SUMOHeavy
+ * @package     SUMOHeavy_Postmark
+ * @copyright   Copyright (c) 2012 SUMO Heavy Industries, LLC
+ * @notice      The Postmark logo and name are trademarks of Wildbit, LLC
+ * @license     http://www.opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
  -->
-<config>
-    <tabs>
-        <postmarkTab1 translate="label" module="postmark">
-            <label>Postmark</label>
-            <sort_order>220</sort_order>
-        </postmarkTab1>
-    </tabs>
+ <config>
     <sections>
         <postmark translate="label" module="postmark">
-            <label>Postmark Settings</label>
-            <tab>postmarkTab1</tab>
+            <label>Postmark Integration</label>
+            <tab>service</tab>
             <frontend_type>text</frontend_type>
-            <sort_order>150</sort_order>
+            <sort_order>500</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>0</show_in_store>
             <groups>
-				<settings translate="label">
+                <settings translate="label">
                     <label>Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
@@ -45,7 +39,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>0</show_in_store>
                     <fields>
-                		<enabled translate="label">
+                        <enabled translate="label">
                             <label>Enable Postmark</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -54,7 +48,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </enabled>
-						<apikey translate="label">
+                        <apikey translate="label">
                             <label>API Key</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>5</sort_order>
@@ -64,7 +58,7 @@
                         </apikey>
                     </fields>
                 </settings>
-             </groups>
+            </groups>
         </postmark>
     </sections>
 </config>
