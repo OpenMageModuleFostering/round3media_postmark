@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Round3media_Postmark",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Postmark Integration",
+    "authors": [
+    {
+        "name": "Bob Brodie",
+        "email": "robert@round3media.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
