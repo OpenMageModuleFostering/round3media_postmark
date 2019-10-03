@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Round3media_Postmark",
+    "name": "OpenMageModuleFostering\/Round3media_Postmark",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
-    "description": "Send emails through Postmark (http://postmarkapp.com)",
+    "description": "Send emails through Postmark (http:\/\/postmarkapp.com)",
     "authors": [
-    {
-        "name": "Robert Brodie",
-        "email": "robert@sumoheavy.com"
-    }
-],
+        {
+            "name": "Robert Brodie",
+            "email": "robert@sumoheavy.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
